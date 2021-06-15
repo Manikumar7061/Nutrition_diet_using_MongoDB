@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+	<head>
+		<title>{{t}}</title>
+		<!-- href="/static/assets/style.css"-->
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
+		
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<style>	
+
+
+
+.button3 {background-color: #008CBA;} /* Blue */
+.button2 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.autocomplete{
+		margin:7% auto;
+	}
+	</style>
+	</head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+	<h1>{{ h }}</h1>
+	<ul>
+		<li><a href="/list" class="{{ a1 }}">Data Fetch</a></li>
+		<li><a href="/" class="{{ a2 }}">Add Data</a></li>
+		<li><a href="/logout" > LogOut</a></li>
+		<!--<li><a href="/completed" class="{{ a3 }}">Completed</a></li>-->
+	</ul>
+	<hr>
+	{% if todos[0] %}
+	<!-- SLIDER 
+================================================== -->
+<div class="container">
+<div id="ei-slider" class="ei-slider">
+	<ul class="ei-slider-large">
+		<li>
+		<img src="https://1rnx9o2dejwa1m0bxp3kachm-wpengine.netdna-ssl.com/wp-content/uploads/sites/31/2018/02/FEATURED-IMAGE-19.jpg" alt="image10" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Good Food  </h2>
+			<h3>Healthy life</h3>
+		</div>
+		</li>
+	</ul>
+	<!-- slider-thumbs -->
+	<ul class="ei-slider-thumbs">
+		<li class="ei-slider-element">Current</li>
+		<li><a href="#">Slide 1</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb01"/></li>
+		<li><a href="#">Slide 2</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb02"/></li>
+		<li><a href="#">Slide 3</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb03"/></li>
+		<li><a href="#">Slide 4</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb04"/></li>
+		<li><a href="#">Slide 5</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb05"/></li>
+		<li><a href="#">Slide 6</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb06"/></li>
+		<li><a href="#">Slide 7</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb07"/></li>
+		<li><a href="#">Slide 8</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb08"/></li>
+		<li><a href="#">Slide 9</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb09"/></li>
+		<li><a href="#">Slide 10</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb10"/></li>
+	</ul>
+</div>
+<div class="minipause">
+</div>
+</div>
+	<!--<div style="display:inline-block"><p class="pull-left" style="margin-bottom:10px;font-weight:700;font-size:1.35em;color:#5a5a5a">Search Term:</p><input type="text" value="" style="width:100%" name="search" id="search--mobile" placeholder="Search for a food..." class="header__mobile-search text--gray"><div class="flex-row-center" style="margin-top:10px"><div class="selects-container" style="width:130px;align-items:flex-start"><p>Quality:</p><select name="quality"><option selected="" value="all">All</option><option value="720p">720p</option><option value="1080p">1080p</option><option value="2160p">2160p</option><option value="3D">3D</option></select></div><div class="selects-container" style="width:130px;align-items:flex-start;margin-left:20px"><p>fat:</p><select name="fat"><option value="All">All</option><option value="Action">Action</option><option selected="" value="Adventure">Adventure</option><option value="Animation">Animation</option><option value="Biography">Biography</option><option value="Comedy">Comedy</option><option value="Crime">Crime</option><option value="Documentary">Documentary</option><option value="Drama">Drama</option><option value="Family">Family</option><option value="Fantasy">Fantasy</option><option value="Film-Noir">Film-Noir</option><option value="Game-Show">Game-Show</option><option value="History">History</option><option value="Horror">Horror</option><option value="Music">Music</option><option value="Musical">Musical</option><option value="Mystery">Mystery</option><option value="News">News</option><option value="Reality-TV">Reality-TV</option><option value="Romance">Romance</option><option value="Sci-Fi">Sci-Fi</option><option value="Sport">Sport</option><option value="Talk-Show">Talk-Show</option><option value="Thriller">Thriller</option><option value="War">War</option><option value="Western">Western</option></select></div><div class="selects-container" style="width:130px;align-items:flex-start;margin-left:20px"><p>protein:</p><select name="protein"><option selected="" value="0">All</option><option value="9">9+</option><option value="8">8+</option><option value="7">7+</option><option value="6">6+</option><option value="5">5+</option><option value="4">4+</option><option value="3">3+</option><option value="2">2+</option><option value="1">1+</option></select></div><div class="selects-container" style="width:130px;align-items:flex-start;margin-left:20px"><p>Order By:</p><select name="order_by"><option selected="" value="latest">Latest</option><option value="oldest">Oldest</option><option value="seeds">Seeds</option><option value="peers">Peers</option><option value="food_group">food_group</option><option value="protein">protein</option><option value="likes">Likes</option><option value="alphabetical">Alphabetical</option><option value="downloads">Downloads</option></select></div></div></div>
+	-->
+	<div class="container">
+	<form action="/search"	method="GET" >
+		<table class="none" >
+		<tr>
+		<td><big><b>Search Reference:</b></big></td>
+		<td><select name="refer" class="w3-select" required>
+			<option value="name">name</option>
+			<option value="food_group">food_group</option>
+			<option value="calories">calories</option>
+			<option value="fat">fat</option>
+			<option value="protein">protein</option>
+			<option value="carbohydrates">carbohydrates</option>
+			<option value="sat_fat">sat_fat</option>
+			<option value="fiber">fiber</option>
+		</select></td>
+		<td><input type="text" class="w3-input w3-hover-blue" name="key" placeholder="food search" size="15" /></td>
+		<td><button type="submit" class="button button4">Search</button></td>
+		</tr>
+		</table>
+	</form>
+	</div>
+	<!--
+	<div >
+		
+		<p class="r1" style="margin-bottom:10px;font-weight:700;font-size:1.35em;color:#5a5a5a">Search Term:</p>
+		<input type="text" value="" style="width:80%; margin-left: 100px; " name="search" id="search--mobile" placeholder="Search for a food..." class="header__mobile-search text--gray">
+		<table>
+			<tr>
+
+			
+		<div class="r1" style="margin-top:10px">
+			<div class="selects-container" style="width:130px;align-items:flex-start">
+				<p>Quality:</p>
+				<select name="quality"><option selected="" value="all">All</option>
+					<option value="720p">720p</option>
+					<option value="1080p">1080p</option>
+					<option value="2160p">2160p</option>
+					<option value="3D">3D</option></select>
+				</div>
+				<td>
+				<div class="selects-container" style="width:130px;align-items:flex-start;margin-left:100px"><p>fat:</p>
+					<select name="fat">
+						<option value="All">All</option><option value="Action">Action</option>
+						<option selected="" value="Adventure">Adventure</option><option value="Animation">Animation</option>
+						<option value="Biography">Biography</option>
+						<option value="Comedy">Comedy</option>
+							<option value="Crime">Crime</option>
+							<option value="Documentary">Documentary</option>
+							<option value="Drama">Drama</option>
+							<option value="Family">Family</option>
+							<option value="Fantasy">Fantasy</option>
+							<option value="Film-Noir">Film-Noir</option>
+							<option value="Game-Show">Game-Show</option>
+							<option value="History">History</option>
+							<option value="Horror">Horror</option>
+							<option value="Music">Music</option>
+							<option value="Musical">Musical</option>
+							<option value="Mystery">Mystery</option>
+							<option value="News">News</option>
+							<option value="Reality-TV">Reality-TV</option>
+							<option value="Romance">Romance</option>
+							<option value="Sci-Fi">Sci-Fi</option>
+							<option value="Sport">Sport</option>
+							<option value="Talk-Show">Talk-Show</option>
+							<option value="Thriller">Thriller</option><option value="War">War</option>
+							<option value="Western">Western</option>
+						</select>
+						</div>
+					</td>
+						<td>
+						<div class="selects-container" style="width:130px;align-items:flex-start;margin-left:20px">
+							<p>protein:</p>
+							<select name="protein"><option selected="" value="0">All</option>
+								<option value="9">9+</option>
+								<option value="8">8+</option>
+								<option value="7">7+</option>
+								<option value="6">6+</option>
+								<option value="5">5+</option>
+								<option value="4">4+</option>
+								<option value="3">3+</option>
+								<option value="2">2+</option>
+								<option value="1">1+</option>
+							</select>
+						</div>
+						</td>
+						<td>
+						<div class="selects-container" style="width:130px;align-items:flex-start;margin-left:20px">
+							<p>Order By:</p>
+							<select name="order_by"><option selected="" value="latest">Latest</option>
+								<option value="oldest">Oldest</option>
+								<option value="seeds">Seeds</option>
+								<option value="peers">Peers</option>
+								<option value="food_group">food_group</option>
+								<option value="protein">protein</option>
+								<option value="likes">Likes</option>
+								<option value="alphabetical">Alphabetical</option>
+								<option value="downloads">Downloads</option>
+							</select>
+						</div>
+						</td>
+					</div>
+				</div>
+				
+			</tr>
+		</table>-->
+	<b>Data List for 100gm/100ml intake:</b>
+	<section>
+	<div class="tb1-header">
+	<table cellpadding="0" cellspacing="0" border="0">
+		<thead>
+	    <tr id="row">
+
+	    	<th class="name">Food</th>
+	    	<th class="food_group">food_group</th>
+	    	<th class="calories">calories</th>
+	    	<th class="fat">fat</th>
+			<th class="protein">protein</th>
+	    	<th class="carbohydrates">carbohydrates</th>
+	    	<th class="sat_fat">sat_fat</th>
+	    	<th class="fiber">fiber</th>
+		<th class="func1">Remove</th>
+		<th class="func2">Modify</th>
+	    </tr>
+		</thead>
+		</table>
+		</div>
+		
+	
+	 <div>
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				{% for todo in todos %}
+		<tr>
+			<td class="name">{{ todo["name"] }}</td>
+			<td class="food_group">{{ todo["food_group"] }}</td>
+			<td class="calories">{{ todo["calories"] }}</td>
+			<td class="fat">{{ todo["fat"] }}</td>
+			<td class="protein">{{ todo["protein"] }}</td>
+			<td class="carbohydrates">{{ todo["carbohydrates"] }}</td>
+			<td class="sat_fat">{{ todo["sat_fat"] }}</td>
+			<td class="fiber">{{ todo["fiber"] }}</td>
+			<td class="func1"><a href="./remove?_id={{ todo['_id'] }}"><button type="submit" class="button button2">DELETE</button></a></td>
+			<td class="func1"><a href="./update?_id={{ todo['_id'] }}"><button type="submit" class="button button3">EDIT</button></a></td>
+		</tr>
+		{% endfor %}
+		</tbody>
+	
+	</table>
+	</div>
+	</section>
+	{% else %}
+		<h4>Wanted to add food details !!</h4>
+	{% endif %}
+	<hr/>
+	<br/><br/><br/><br/><br/><br/>
+	<div class='container'>
+		<div class="login-box">
+	
+		<h3>ADD food</h3>
+		<div class="col-sm-12 col-md-12">
+			<div class="autocomplete">
+	<form action="/action" method="POST">
+		<div class="user-box">
+			<input type="text" name="name" placeholder="food name" />
+			
+			</div>
+			<div class="user-box">
+			<input type="text" name="food_group" placeholder="food_group" />
+			
+			</div>
+			<div class="user-box">
+			<input type="text" name="calories" placeholder="calories" />
+			</div>
+			<div class="user-box">
+			<input type="text" name="fat" placeholder="fat" />
+			</div>
+			<div class="user-box">
+			<input type="text" name="protein" placeholder="protein" />
+			</div>
+			<div class="user-box">
+			<input type="text" name="carbohydrates" placeholder="carbohydrates" />
+			</div>
+			<div class="user-box">
+			<input type="text" name="sat_fat" placeholder="sat_fat" />
+			</div>
+			<div class="user-box">
+			<input type="text" name="fiber" placeholder="fiber" />
+			</div>
+			<button type="submit"  class="button"> create </button>
+			
+		</form>
+		
+</body>
+</html>
+<!--<div class="login-box">
+	<h2>Login</h2>
+	<form>
+	  <div class="user-box">
+		<input type="text" name="" required="">
+		<label>Username</label>
+	  </div>
+	  <div class="user-box">
+		<input type="password" name="" required="">
+		<label>Password</label>
+	  </div>
+	  <a href="#">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Submit
+	  </a>
+	</form>
+  </div>-->

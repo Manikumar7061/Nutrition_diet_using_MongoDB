@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %} 
+<div class="container">
+    <div class="login-box">
+        <h2 text-align:center>NUTRITION</h2>
+    <h3>Register</h3>
+		<div class="col-sm-12 col-md-12">
+			<div class="autocomplete">
+            <form method=POST action="{{ url_for('register') }}">
+                <div class="user-box">
+                   <!-- <label for="exampleInputEmail1">Username</label> -->
+                    <input type="email" class="form-control" name="username" placeholder="Enter email" required>
+                </div>
+                <div class="user-box">
+                   <!-- <label for="exampleInputPassword1">Password</label>-->
+                    <input type="password" class="form-control" name="pass" placeholder="Password" required>
+                </div>
+                <button type="submit" class="button">Register</button>
+            </form>
+            <br>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}

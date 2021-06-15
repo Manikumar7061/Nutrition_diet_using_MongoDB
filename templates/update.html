@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>{{t}}</title>
+	</head>
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	
+<body>
+	<h1>{{h}}</h1>
+	<hr>
+	<div class="subheader">
+		<h3>Update tasks with a reference</h3> 
+	</div>
+	<div class="container">
+	
+	<div class="login-box">
+	<form action="/action3" method="POST">
+	{% for task in tasks %}
+		Unique Object ID : {{ task['_id'] }}<br/>
+	<input type="text" name="_id" value="{{ task['_id'] }}" hidden>
+
+	<table>
+	<tr>
+	<td>name</td><td> : </td><td><input type="text" name="name" value="{{ task['name'] }}" placeholder="{{ task['name'] }}"></td>
+	</tr>
+	<tr>
+	<td>food_group</td><td> : </td><td><input type="text" name="food_group" value="{{ task['food_group'] }}" placeholder="{{ task['food_group'] }}"> </td>
+	</tr>
+	<tr>
+	<td>calories</td><td> : </td><td><input type="text" name="calories" value="{{ task['calories'] }}" placeholder="{{ task['calories'] }}"></td>
+	</tr>
+	<tr>
+	<td>fat</td><td> : </td><td><input type="text" name="fat" value="{{ task['fat'] }}" placeholder="{{ task['fat'] }}"></td>
+	</tr>
+	<tr>
+		<td>protein</td><td> : </td><td><input type="text" name="protein" value="{{ task['protein'] }}" placeholder="{{ task['protein'] }}"></td>
+		</tr>
+	<tr>
+		<td>carbohydrates</td><td> : </td><td><input type="text" name="carbohydrates" value="{{ task['carbohydrates'] }}" placeholder="{{ task['carbohydrates'] }}"></td>
+	</tr>
+	<tr>
+		<td>sat_fat</td><td> : </td><td><input type="text" name="sat_fat" value="{{ task['sat_fat'] }}" placeholder="{{ task['sat_fat'] }}"></td>
+	</tr>
+	<tr>
+		<td>fiber</td><td> : </td><td><input type="text" name="fiber" value="{{ task['fiber'] }}" placeholder="{{ task['fiber'] }}"></td>
+	</tr>	
+
+	</table>
+	{% endfor %}
+		<button type="submit" class="button"> Update food </button>
+		<br/>
+	</form>
+	</div>
+	</div>
+	<a href="/list">List</a>
+</body>
+</html>
